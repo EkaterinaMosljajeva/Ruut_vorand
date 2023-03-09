@@ -1,0 +1,26 @@
+from tkinter import *
+
+aken=Tk()
+aken.geometry("550x200")
+aken.title("Ruudukujulised võrrandid")
+lbl=Label(aken,text="Kvadraatilise võrrandi lahendamine",bg="lightblue",fg="green",font="Arial 20")
+ent1=Entry(aken, fg="blue",bg="lightblue",width=5,font="Arial 20",justify=CENTER)
+t1=Label(aken,text="x**2+",fg="green",font="Arial 20")
+ent2=Entry(aken, fg="blue",bg="lightblue",width=5,font="Arial 20",justify=CENTER)
+t2=Label(aken,text="x+",fg="green",font="Arial 20")
+ent3=Entry(aken, fg="blue",bg="lightblue",width=5,font="Arial 20",justify=CENTER)
+t3=Label(aken,text="=0",fg="green",font="Arial 20")
+btn=Button(aken,text="Lahendada", font="Arial 24",bg="green", relief=GROOVE, width=10)
+lbl2=Label(aken,text="Lahendus",bg="yellow",font="Arial 10",width=200,height=3)
+
+
+lbl.pack()
+ent1.pack(side=LEFT)
+t1.pack(side=LEFT)
+ent2.pack(side=LEFT)
+t2.pack(side=LEFT)
+ent3.pack(side=LEFT)
+t3.pack(side=LEFT)
+btn.pack(side=RIGHT)
+lbl2.pack()
+aken.mainloop()
